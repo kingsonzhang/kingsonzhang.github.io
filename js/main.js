@@ -1,4 +1,4 @@
-setInterval(changeColor, 500);
+//setInterval(changeColor, 500);
 
 function changeColor(){
     const RED = Math.floor(Math.random() * 255);
