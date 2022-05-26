@@ -12,17 +12,7 @@
 /*******************************************/
 body{
     background-color: antiquewhite;
-}
-
-header{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-h1{
-    font-size: 3rem;
-    margin: 25px 0;
+    height: 100vh;
 }
 
 #Artifacts{
@@ -34,7 +24,7 @@ h1{
     flex-basis: 15%;
     font-size: 1rem;
     background-color: rgba(50, 50, 50, 0.5);
-    height: 500px;
+    height: 100%;
     overflow-y: auto;
 }
 
@@ -44,6 +34,7 @@ h1{
 
 #SetSelector img{
     width: 17px;
+    padding-right: 3px;
 }
 
 #SetSelector p{
@@ -70,7 +61,7 @@ h1{
     width: 100%;
 }
 
-@media only screen and (max-width: 400px){
+@media screen and (orientation:portrait){
     h1{
         font-size: 1.75rem;
     }
@@ -78,7 +69,7 @@ h1{
         display: block;
     }
     #SetSelector{
-        height: 200px;
+        height: 30vh;
     }
     #SetSelector p:first-child{
         font-size: 1.5rem;
@@ -89,5 +80,20 @@ h1{
     }
     .Pieces{
         flex-basis: 30%;
+    }
+}
+
+@media screen and (orientation:landscape){
+    h1{
+        display: none;
+    }
+    #SetSelector{
+        height: 100vh;
+    }
+    #SetSelector img{
+        display: none;
+    }
+    #Display{
+        flex-wrap: wrap;
     }
 }
