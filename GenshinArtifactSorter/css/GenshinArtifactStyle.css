@@ -43,7 +43,7 @@ h1{
 }
 
 #SetSelector img{
-    width: 11%;
+    width: 17px;
 }
 
 #SetSelector p{
@@ -62,11 +62,32 @@ h1{
     flex-basis: 85%;
     justify-content: space-around;
 }
-
 .Pieces{
     flex-basis: 15%;
 }
 
 .Pieces img{
     width: 100%;
+}
+
+@media only screen and (max-width: 400px){
+    h1{
+        font-size: 1.75rem;
+    }
+    #Artifacts{
+        display: block;
+    }
+    #SetSelector{
+        height: 200px;
+    }
+    #SetSelector p:first-child{
+        font-size: 1.5rem;
+    }
+    #Display{
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .Pieces{
+        flex-basis: 30%;
+    }
 }
