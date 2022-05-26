@@ -29,13 +29,7 @@ body{
 }
 
 .ArtifactSet{
-    display: flex;
     height: 100%;
-}
-
-#SetSelector img{
-    width: 20px;
-    margin-right: 5px;
 }
 
 #SetSelector p, #SetSelector li{
@@ -84,7 +78,7 @@ body{
     }
 }
 
-@media screen and (orientation:landscape) and (max-width: 900px){
+@media screen and (max-width: 900px){
     h1{
         display: none;
     }

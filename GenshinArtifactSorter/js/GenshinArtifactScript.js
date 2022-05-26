@@ -7,6 +7,8 @@ document.querySelectorAll(".ArtifactSet").forEach(x => x.addEventListener("mouse
 document.querySelectorAll(".ArtifactSet").forEach(x => x.addEventListener("mouseout", function exitHover(event){
     if (event.target.id != current)
         event.target.style.backgroundColor = "rgba(50, 50, 50, 0)";
+    else
+    event.target.style.backgroundColor = "rgba(50, 50, 50, 1)";
 }));
 
 document.querySelectorAll(".ArtifactSet").forEach(x => x.addEventListener("click", function onClick(event){
