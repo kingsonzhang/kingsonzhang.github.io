@@ -6,6 +6,15 @@
 *{
     box-sizing: border-box;
 }
+
+/*Togglable classes*/
+.noHover{
+    pointer-events: none;
+}
+
+.show{
+    display: none;
+}
   
 /******************************************
 /* ADDITIONAL STYLES
@@ -29,6 +38,13 @@ body{
 
 .ArtifactSet{
     height: 100%;
+    display: flex;
+}
+
+.ArtifactSet img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
 
 #SetSelector p, #SetSelector li{
@@ -66,6 +82,9 @@ body{
     #SetSelector p:first-child{
         font-size: 1.5rem;
     }
+    .ArtifactSet img{
+        display: none;
+    }
     #Display{
         flex-wrap: wrap;
         margin-top: 50px;
@@ -79,6 +98,9 @@ body{
     #SetSelector{
         flex-basis: 20%;
         overflow-y: auto;
+    }
+    .ArtifactSet img{
+        display:initial;
     }
     #Display{
         flex-basis: 80%;
