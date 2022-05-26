@@ -20,4 +20,14 @@ document.querySelectorAll(".ArtifactSet").forEach(x => x.addEventListener("click
     let currentlySelected = document.getElementById(current);
     currentlySelected.style.backgroundColor = "rgba(50, 50, 50, 1)";
     currentlySelected.style.color = "white";
-}))
+
+    changeArtifacts(current);
+}));
+
+function changeArtifacts(eventId){
+    document.getElementById("Flower").src=`images/${eventId}/${eventId}Flower.jpg`
+    document.getElementById("Feather").src=`images/${eventId}/${eventId}Feather.jpg`
+    document.getElementById("Timepiece").src=`images/${eventId}/${eventId}Timepiece.jpg`
+    document.getElementById("Goblet").src=`images/${eventId}/${eventId}Goblet.jpg`
+    document.getElementById("Circlet").src=`images/${eventId}/${eventId}Circlet.jpg`
+}

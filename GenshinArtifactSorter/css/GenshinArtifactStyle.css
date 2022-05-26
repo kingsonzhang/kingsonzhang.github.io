@@ -38,8 +38,17 @@ h1{
     overflow-y: auto;
 }
 
+.ArtifactSet{
+    display: flex;
+}
+
+#SetSelector img{
+    width: 11%;
+}
+
 #SetSelector p{
     padding: 10px 20px;
+    cursor: default;
 }
 
 #SetSelector p:first-child{
