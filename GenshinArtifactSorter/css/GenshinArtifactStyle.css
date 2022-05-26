@@ -12,7 +12,6 @@
 /*******************************************/
 body{
     background-color: antiquewhite;
-    height: 100vh;
 }
 
 #Artifacts{
@@ -24,7 +23,7 @@ body{
     flex-basis: 15%;
     font-size: 1rem;
     background-color: rgba(50, 50, 50, 0.5);
-    height: 100%;
+    height: 100vh;
     overflow-y: auto;
 }
 
@@ -35,6 +34,7 @@ body{
 #SetSelector p, #SetSelector li{
     padding: 10px 20px;
     cursor: default;
+    height: auto;
 }
 
 #SetSelector p:first-child{
@@ -57,9 +57,6 @@ body{
 }
 
 @media screen and (orientation:portrait){
-    h1{
-        font-size: 1.75rem;
-    }
     #Artifacts{
         display: block;
     }
@@ -79,13 +76,15 @@ body{
 }
 
 @media screen and (max-width: 900px){
-    h1{
-        display: none;
-    }
     #SetSelector{
-        height: 100vh;
+        flex-basis: 20%;
+        overflow-y: auto;
     }
     #Display{
+        flex-basis: 80%;
         flex-wrap: wrap;
+    }
+    .Pieces{
+        flex-basis: 30%;
     }
 }
