@@ -25,9 +25,9 @@ document.querySelectorAll(".ArtifactSet").forEach(x => x.addEventListener("click
 }));
 
 function changeArtifacts(eventId){
-    document.getElementById("Flower").src=`images/${eventId}/${eventId}Flower.jpg`
-    document.getElementById("Feather").src=`images/${eventId}/${eventId}Feather.jpg`
-    document.getElementById("Timepiece").src=`images/${eventId}/${eventId}Timepiece.jpg`
-    document.getElementById("Goblet").src=`images/${eventId}/${eventId}Goblet.jpg`
-    document.getElementById("Circlet").src=`images/${eventId}/${eventId}Circlet.jpg`
+    document.getElementById("Flower").src=`./images/${eventId}/${eventId}Flower.jpg`
+    document.getElementById("Feather").src=`./images/${eventId}/${eventId}Feather.jpg`
+    document.getElementById("Timepiece").src=`./images/${eventId}/${eventId}Timepiece.jpg`
+    document.getElementById("Goblet").src=`./images/${eventId}/${eventId}Goblet.jpg`
+    document.getElementById("Circlet").src=`./images/${eventId}/${eventId}Circlet.jpg`
 }
