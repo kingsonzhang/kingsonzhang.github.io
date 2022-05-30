@@ -49,7 +49,7 @@ body{
 }
 
 #SetSelector p, #SetSelector li{
-    padding: 10px 20px;
+    padding: 10px 15px;
     cursor: default;
     height: auto;
 }
