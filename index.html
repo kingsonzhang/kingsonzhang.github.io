@@ -8,34 +8,37 @@
 </head>
 <body>
 
-    <main class="container">
-        <!-- Top Section: Flowchart Image -->
-        <section class="section top-section">
+    <div class="page-wrapper">
+        <!-- Standalone Top Section: Flowchart Image -->
+        <section class="flowchart-section">
             <img src="Flowchart.jpg" alt="Flowchart" class="flowchart-img">
         </section>
 
-        <!-- Middle Section: Chemical Input -->
-        <section class="section middle-section">
-            <label for="chemicalInput" class="input-label">Enter Chemical Name:</label>
-            <div class="input-group">
-                <input 
-                    type="text" 
-                    id="chemicalInput" 
-                    placeholder="e.g., acetone, benzene, ethanol" 
-                    autocomplete="off"
-                >
-                <button id="searchBtn">Search</button>
-            </div>
-        </section>
+        <!-- Lower Section: Interactive App -->
+        <main class="app-container">
+            <!-- Middle Section: Chemical Input -->
+            <section class="section middle-section">
+                <label for="chemicalInput" class="input-label">Enter Chemical Name:</label>
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="chemicalInput" 
+                        placeholder="e.g., acetone, benzene, ethanol" 
+                        autocomplete="off"
+                    >
+                    <button id="searchBtn">Search</button>
+                </div>
+            </section>
 
-        <!-- Bottom Section: GHS Hazard Output -->
-        <section class="section bottom-section">
-            <h2>GHS Hazard Statements</h2>
-            <div id="output" class="output-box">
-                <p class="placeholder-text">Enter a compound name above to search for GHS Hazard statements.</p>
-            </div>
-        </section>
-    </main>
+            <!-- Bottom Section: GHS Hazard Output -->
+            <section class="section bottom-section">
+                <h2>GHS Hazard Statements</h2>
+                <div id="output" class="output-box">
+                    <p class="placeholder-text">Enter a compound name above to search for GHS Hazard statements.</p>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
