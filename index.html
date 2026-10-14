@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHS Hazard Code Lookup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="container">
+        <!-- Top Section: Flowchart Image -->
+        <section class="section top-section">
+            <img src="Flowchart.jpg" alt="Flowchart" class="flowchart-img">
+        </section>
+
+        <!-- Middle Section: Chemical Input -->
+        <section class="section middle-section">
+            <label for="chemicalInput" class="input-label">Enter Chemical Name:</label>
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="chemicalInput" 
+                    placeholder="e.g., acetone, benzene, ethanol" 
+                    autocomplete="off"
+                >
+                <button id="searchBtn">Search</button>
+            </div>
+        </section>
+
+        <!-- Bottom Section: GHS Hazard Output -->
+        <section class="section bottom-section">
+            <h2>GHS Hazard Statements</h2>
+            <div id="output" class="output-box">
+                <p class="placeholder-text">Enter a compound name above to search for GHS Hazard statements.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
