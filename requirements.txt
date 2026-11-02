@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+torch
+open_clip_torch
+transformers
+huggingface_hub
+pillow
+onnx
+onnxscript
+onnxruntime
+
+#python -m http.server 8000
+#http://localhost:8000
